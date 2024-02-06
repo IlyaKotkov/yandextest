@@ -1,0 +1,9 @@
+.image__container {
+    margin: 0 auto;
+    padding: 0px;
+    background-image: url(../../images/image23.png);
+    background-size: cover;
+    opacity: 1;
+    width: 1920px;
+    height: 700px;
+}
