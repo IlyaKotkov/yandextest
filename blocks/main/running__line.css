@@ -1,0 +1,38 @@
+.running__line {
+    display: flex;
+    height: 60px;
+    max-width: 1879px;
+    overflow: hidden;
+ }
+
+ .running__line__incont {
+   animation: marquee 10s infinite linear;
+   white-space: nowrap;
+   position: relative;
+   display: flex;
+   flex-direction: row; 
+   align-items: center;
+   background: rgb(245, 73, 50);
+   color: rgb(255, 255, 255);
+   font-family: Merriweather;
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 110%;
+   letter-spacing: 0px;
+   text-align: right;
+   text-transform: uppercase;
+ }
+
+ .running__line__incont:after {
+     content: ' Дело помощи утопающим — дело рук самих утопающих! · Шахматы двигают вперед не только культуру, но и экономику! · Лед тронулся, господа присяжные заседатели! · ';
+     overflow: hidden;
+ }
+
+@keyframes marquee {
+     0% {
+         transform: translateX(0%);
+     }
+     100% {
+         transform: translateX(-50%);
+     }
+ }

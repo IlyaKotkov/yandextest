@@ -1,0 +1,51 @@
+.poster {
+    margin: 0 auto;
+    padding-top: 80px;
+    background-color: white;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.posterHeader__container {
+    margin: 0;
+    display: flex;
+}
+
+.poster__header {
+margin: 0;
+width: 764px;
+ font-family: Merriweather;
+font-size: 36px;
+font-weight: 700;
+line-height: 135%;
+letter-spacing: 0px;
+text-align: left;
+text-transform: uppercase;
+}
+
+.poster__header:last-of-type {
+    color: red;
+}
+
+.posterText__container {
+    margin-right: 64px;
+}
+
+.poster__Players {
+    width: 394px;
+    height: 250px;
+}
+
+.poster__container {
+    margin: 0;
+    margin-top: 64px;
+    display: flex;
+}
+
+.poster__image {
+    margin-right: 44px;
+    margin-left: -185px;
+}

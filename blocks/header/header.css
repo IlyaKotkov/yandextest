@@ -1,8 +1,10 @@
 .header {
     margin: 0;
     padding: 0;
-    background-color: #E9DED4;
-    width: 1920px;
+    background-color: rgb(233, 222, 212);
+    max-width: 1879px;
+    margin-left: -5px;
+    margin-top: -2px;
     height: 700px;
     position: relative;
     overflow: hidden;
@@ -10,7 +12,7 @@
 
 .header__logo {
     position: absolute;
-    z-index: 2;
+    z-index: 6;
     margin-left: 349px;
     margin-top: 26px;
 }
@@ -20,42 +22,39 @@
     padding: 0;
     margin-top: 270px;
     margin-left: 161px;
-    margin-right: 135px;
     border: none;
     position: absolute;
     background-color: transparent;
-    background-image: url(../../images/city.png);
     width: 1623.5px;
     height: 452.5px;
-    z-index: 3;
-
+    z-index: 4;
+    filter: contrast(200%);
 }
 
 .vector__chess {
     margin: 0;
     padding: 0;
-    margin-top: 260px;
+    margin-top: 266px;
     margin-left: 159px;
-    margin-right: 135px;
     position: absolute;
-    background-image: url(../../images/Vector3.png);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 1603px;
     height: 452.5px;
-    z-index: 2;
+    z-index: 4;
 }
 
 .header__container {
     margin: 0;
     padding: 0;
-    opacity: .3;
-    z-index: 1;
-    background-image: url(../../images/image23.png);
+    position: absolute;
+    max-width: 1879px;
     background-size: cover;
+    opacity: .3;
     height: 881px;
     margin-left: -5px;
     margin-top: -5px;
-    margin-right: -5px;
+    padding-right: 10px;
+    z-index: 5;
 }
 
 .header__container_text {
@@ -63,12 +62,13 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    z-index: 4;
+    z-index: 6;
     width: 542px;
     height: 444px;
     margin-top: 124px;
     margin-left: 348.5px;
     margin-bottom: 132px;
+    max-width: 100%;
 }
 
 .header__text {
@@ -83,8 +83,8 @@
     text-transform: uppercase;
 }
 
-.header__text:last-of-type{
-  text-align: center;
+.header__text:last-of-type {
+    text-align: center;
 }
 
 .header__signature {
@@ -98,79 +98,87 @@
 }
 
 .button__container {
-    display:  flex;
-    flex-direction:  row;
+    display: flex;
+    flex-direction: row;
 }
 
 .button__support {
-position: static;
-width: 263px;
-height: 72px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 20px;
-flex: none;
-order: 0;
-flex-grow: 1;
-box-sizing: border-box;
-border: 2px solid rgb(31, 31, 31);
-background-color: transparent;
-border-radius: 66px;
-margin-right: 16px;
-cursor: pointer;
-font-family: Golos Text;
-font-size: 16px;
-font-weight: 500;
-line-height: 130%;
-letter-spacing: 0px;
-text-align: center;
-}
-
-.button__support:hover{
-    background-color: rgb(31, 31, 31) ;
-    color:  white;
-}
-
-.running__line {
+    position: static;
+    width: 263px;
+    height: 72px;
     display: flex;
-    overflow-x: hidden;
-    width: 1920px;
- }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    box-sizing: border-box;
+    border: 2px solid rgb(31, 31, 31);
+    background-color: transparent;
+    border-radius: 66px;
+    margin-right: 16px;
+    cursor: pointer;
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0px;
+    text-align: center;
+}
 
- .running__line__incont {
-   animation: marquee 15s infinite linear;
-   white-space: nowrap;
-   position: relative;
-   height: 60px;
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   align-items: center;
-   padding: 18px 12px 18px 12px;
-   background: rgb(245, 73, 50);
-   color: rgb(255, 255, 255);
-   font-family: Merriweather;
-   font-size: 22px;
-   font-weight: 400;
-   line-height: 110%;
-   letter-spacing: 0px;
-   text-align: right;
-   text-transform: uppercase;
- }
+.button__support:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
 
- .running__line__incont:after {
-     content: 'Дело помощи утопающим — дело рук самих утопающих! · Шахматы двигают вперед не только культуру, но и экономику! · Лед тронулся, господа присяжные заседатели! ·';
-     white-space: pre;
- }
+.button__support:active {
+    background-color: #FBCE51;
+}
 
-@keyframes marquee {
-     0% {
-         transform: translateX(0%);
-     }
-     100% {
-         transform: translateX(-50%);
-     }
- }
+.circle__container {
+    position: absolute;
+    width: 660px;
+    height: 660px;
+    margin-left: 951px;
+    margin-top: -44px;
+    z-index: 3;
+}
 
+.words__onCircle {
+    position: absolute;
+    width: 634px;
+    height: 634px;
+    margin-left: 964px;
+    margin-top: -32px;
+    z-index: 3;
+}
+
+.figure__first {
+    margin-top: 482px;
+    margin-left: 1113px;
+    position: absolute;
+    z-index: 5;
+}
+
+.figure__second {
+    margin-top: 558px;
+    margin-left: 1516px;
+    position: absolute;
+    z-index: 5;
+}
+
+.figure__thrid {
+    margin-top: 270px;
+    margin-left: 1007px;
+    position: absolute;
+    z-index: 3;
+}
+
+.figure__fourth {
+    margin-top: 165px;
+    margin-left: 1339px;
+    position: absolute;
+    z-index: 3;
+}
