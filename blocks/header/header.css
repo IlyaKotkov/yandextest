@@ -95,6 +95,7 @@
     line-height: 130%;
     letter-spacing: 0px;
     text-align: center;
+    margin-top: 25px;
 }
 
 .button__container {
@@ -126,6 +127,7 @@
     line-height: 130%;
     letter-spacing: 0px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .button__support:hover {
