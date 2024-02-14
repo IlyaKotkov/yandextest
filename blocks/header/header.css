@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     background-color: rgb(233, 222, 212);
-    max-width: 1879px;
-    margin-left: -5px;
-    margin-top: -2px;
+    max-width: 1920px;
     height: 700px;
     position: relative;
     overflow: hidden;
+    overflow-x: hidden;
 }
 
 .header__logo {
@@ -47,13 +46,10 @@
     margin: 0;
     padding: 0;
     position: absolute;
-    max-width: 1879px;
+    width: 100%;
     background-size: cover;
     opacity: .3;
     height: 881px;
-    margin-left: -5px;
-    margin-top: -5px;
-    padding-right: 10px;
     z-index: 5;
 }
 
@@ -183,4 +179,155 @@
     margin-left: 1339px;
     position: absolute;
     z-index: 3;
+}
+
+@media screen and (max-width: 1680px) {
+
+    .header__container {
+        max-width: 1680px;
+    }
+
+    .chess {
+        margin-left: 50px;
+    }
+    
+    .vector__chess {
+        margin-left: 50px;
+    }
+
+    .header__logo {
+        margin-left: 200px;
+    }
+
+    .header__container_text {
+        margin-left: 200px;
+    }
+
+    .circle__container {
+        margin-left: 880px;
+    }
+
+    .words__onCircle {
+        margin-left: 893px;
+    }
+
+    .figure__first {
+        margin-left: 950px;
+    }
+
+    .figure__second {
+        margin-left: 1416px;
+    }
+
+    .figure__thrid {
+        margin-left: 920px;
+    }
+    
+    .figure__fourth {
+        margin-left: 1250px;
+    }
+}
+
+@media screen and (max-width: 1390px) {
+
+
+    .header__container {
+        max-width: 1366px;
+    }
+
+    .chess {
+        margin-left: -110px;
+    }
+    
+    .vector__chess {
+        margin-left: -110px;
+    }
+
+    .header__logo {
+        margin-left: 72px;
+    }
+
+    .header__container_text {
+        margin-left: 72px;
+    }
+
+    .circle__container {
+        margin-left: 673px;
+    }
+
+    .words__onCircle {
+        margin-left: 687px;
+    }
+
+    .figure__first {
+        margin-left: 835px;
+    }
+
+    .figure__second {
+        margin-left: 1238px;
+    }
+
+    .figure__thrid {
+        margin-left: 729px;
+    }
+    
+    .figure__fourth {
+        margin-left: 1094px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header {
+        height: 774px;
+    }
+    
+    .header__logo {
+        width: 213px;
+        height: 32px;
+        margin-top: 17px;
+        margin-left: 20px;
+    }
+
+    .header__text {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 110%;
+        letter-spacing: 0px;
+    }
+    
+    .header__signature {
+        font-size: 18px;
+font-weight: 400;
+line-height: 130%;
+letter-spacing: 0px;
+text-align: left;
+    }
+
+    .header__container_text {
+        margin-top: 90px;
+        margin-left: 20px;
+        width: 335px;
+    }
+
+.button__container {
+    display: block;
+    margin-top: 0;
+}
+
+    .button__support {
+        margin-top: 13px;
+        width: 335px;
+        height: 47px;
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+font-weight: 500;
+line-height: 130%;
+letter-spacing: 0px;
+    }
+
+    .chess {
+        width: 885px;
+        height: 246.81px;
+    }
 }

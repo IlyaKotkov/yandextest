@@ -1,7 +1,7 @@
 .running__line {
     display: flex;
     height: 60px;
-    max-width: 1879px;
+    max-width: 1920px;
     overflow: hidden;
  }
 
@@ -35,4 +35,20 @@
      100% {
          transform: translateX(-50%);
      }
+ }
+
+ @media screen and (max-width: 1680px) {
+
+    .running__line {
+        max-width: 1680px;
+     }
+
+ }
+
+ @media screen and (max-width: 1390px) {
+
+    .running__line {
+        max-width: 1366px;
+     }
+
  }

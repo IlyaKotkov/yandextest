@@ -2,7 +2,6 @@
     font-family: 'Golos Text', sans-serif;
     margin: 0;
     padding: 0;
-    width: 1864px;
     background-color: #000000;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -12,6 +11,5 @@
 }
 
 .page__container {
-    max-width: 1879px;
     min-width: 320px;
 }
