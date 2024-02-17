@@ -28,6 +28,27 @@
     margin-left: 43px;
 }
 
+.poster__table375 {
+    display: none;
+}
+
+.poster__tablePunkts375 {
+    display: none;
+}
+
+.poster__tablePunktsTextAnswers375 {
+    display: none;
+}
+
+
+.poster__header2 {
+    display: none;
+}
+
+.poster__header1 {
+    display: none;
+}
+
 .poster__header:last-of-type {
     margin-top: 2px;
     margin-left: 50px;
@@ -218,4 +239,188 @@
         display: flex;
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 970px) {
+    .poster__header:last-child {
+        display: none;
+    }
+
+    .poster__header {
+        display: none;
+    }
+
+    .posterHeader__container {
+        padding-left: 9px;
+    }
+
+    .poster__header1 {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-family: Merriweather;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 135%;
+        letter-spacing: 0px;
+        text-align: left;
+        text-transform: uppercase;
+        width: 335px;
+        color: red;
+    }
+
+    .poster__header2 {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 135%;
+        letter-spacing: 0px;
+        text-align: left;
+        font-family: Merriweather;
+        text-transform: uppercase;
+        width: 335px;
+    }
+
+    .posterText__container {
+        margin-top: -33px;
+        margin-left: 65px;
+    }
+
+    .poster__Players {
+        margin-top: 24px;
+        margin-bottom: 25px;
+        width: 335px;
+        height: 212.56px;
+    }
+
+    .poster__image {
+        width: 370px;
+        height: 400px;
+        margin: 0;
+        margin-left: 50px;
+        margin-top: -40px;
+    }
+
+    .poster__posterContainer {
+        width: 335px;
+    }
+
+    .poster__text {
+        font-family: Merriweather;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 135%;
+        letter-spacing: 0px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .poster__posterContainer {
+        margin-left: 70px;
+        margin-top: 25px;
+    }
+
+    .poster__table375 {
+        margin-top: 30px;
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    .poster__tablePunkts375 {
+        width: 335px;
+        padding: 0;
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    .poster__tablePunktsText375 {
+        display: inline-block;
+        color: rgb(49, 49, 49);
+        font-family: Golos Text;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: left;
+        opacity: 0.7;
+        margin-top: 16px;
+    }
+
+    .poster__tablePunktsText375:first-child {
+        margin-top: 0px;
+    }
+
+    .poster__tablePunktsTextAnswers375 {
+        width: 335px;
+        list-style-type: none;
+        display: inline-block;
+        font-family: Golos Text;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 12px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid rgb(208, 208, 208);
+    }
+
+    .poster__tablePunktsTextAnswers375:last-child {
+        border-bottom: none;
+        padding-bottom: none;
+    }
+
+    .poster__tablePunktsTextAnswers375:nth-child(4) {
+        margin-bottom: 16px;
+    }
+
+    .poster__table {
+        display: none;
+    }
+
+    .poster__tablePunkts {
+        display: none;
+    }
+
+    .poster__tablePunktsTextAnswers {
+        display: none;
+    }
+
+    .poster__link {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 0px;
+    }
+
+    .poster__tablePunktsText375:nth-child(5) {
+        display: inline;
+        width: 335px;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .poster__tablePunktsText375:nth-child(7) {
+        width: 335px;
+        padding-top: 16px;
+       border-top: 2px solid rgb(208, 208, 208);
+    }
+
+    .answer {
+        display: inline;
+        margin: 0;
+        font-family: Golos Text;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: 0px;
+        padding-bottom: 16px;
+        width: 335px;
+    }
+}
+
+del {
+    text-decoration-color: red;
 }

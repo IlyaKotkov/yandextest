@@ -100,6 +100,8 @@
 }
 
 .button__support {
+    margin: 0;
+    padding: 0;
     position: static;
     width: 263px;
     height: 72px;
@@ -107,7 +109,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     flex: none;
     order: 0;
     flex-grow: 1;
@@ -276,7 +281,7 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 970px) {
     .header {
         height: 774px;
     }
@@ -315,6 +320,7 @@ text-align: left;
 }
 
     .button__support {
+        padding: 0;
         margin-top: 13px;
         width: 335px;
         height: 47px;
@@ -329,5 +335,54 @@ letter-spacing: 0px;
     .chess {
         width: 885px;
         height: 246.81px;
+        margin-left: -400px;
+        margin-top: 536px;
+    }
+
+    .vector__chess {
+        width: 885px;
+        height: 246.81px;
+        margin-left: -410px;
+        margin-top: 536px;
+    }
+
+    .figure__first {
+
+        width: 95px;
+        height: 126px;
+        margin-left: 148px;
+        margin-top: 662px;
+    }
+
+    .figure__second {
+        display: none;
+    }
+
+    .figure__thrid {
+        margin-top: 540px;
+        margin-left: 70px;
+        width: 47px;
+        height: 116px;
+    }
+
+    .figure__fourth {
+        width: 46px;
+        height: 104px;
+        margin-top: 500px;
+        margin-left: 240px;
+    }
+
+    .circle__container {
+        width: 295.76px;
+        height: 295.76px;
+        margin-top: 410px;
+        margin-left: 32px;
+    }
+
+    .words__onCircle {
+        width: 285px;
+        height: 285px;
+        margin-top: 418px;
+        margin-left: 38px;
     }
 }
