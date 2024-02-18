@@ -42,6 +42,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: none;
+}
+
+.arrow:hover {
+  background: rgba(49, 49, 49, 0.2);
 }
 
 .players__count {
@@ -134,6 +139,16 @@
     display: none;
   }
 
+  .header__players375 {
+    display: none;
+  }
+  .player__container375 {
+    display: none;
+  }
+  .switch__container375 {
+    display: none;
+  }
+
   @media screen and (max-width: 1680px) {
     .header__container_players {
         margin-left: 200px;
@@ -167,5 +182,92 @@
         margin-left: -15px;
     }
 
+}
+
+@media screen and (max-width: 970px) {
+    .header__players {
+        display: none;
+      }
+      .player__container {
+        display: none;
+      }
+      .switch__container {
+        display: none;
+      }
+
+      .players_container_all375 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+      }
+
+    .header__players375 {
+        margin-left: 13px;
+        display: inline-block;
+        color: rgb(49, 49, 49);
+font-family: Merriweather;
+font-size: 36px;
+font-weight: 400;
+line-height: 110%;
+letter-spacing: 0px;
+text-align: left;
+text-transform: uppercase;
+margin-bottom: 20px;
+      }
+
+      .name__player {
+        margin-top: 25px;
+        margin-left: -20px;
+      }
+
+      .description__player {
+        margin-left: -18px;
+      }
+
+      .moreInfo {
+        margin-left: 65px;
+      }
+
+      .player__container375 {
+        display: inline-block;
+      }
+      .switch__container375 {
+        display: flex;
+        margin-top: 35px;
+        margin-left:59px;
+        align-items: center;
+      }
+
+      .arrow {
+        width: 36px;
+height: 36px;
+      }
+
+      .players__count375 {
+        font-size: 16px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0px;
+margin-left: 12px;
+margin-right: 15px;
+      }
+
+      .players__count375:nth-child(3) {
+        margin-left: 0px;
+      }
+
+      .players__count375:nth-child(2) {
+        margin-right: 0px;
+      }
+
+      .hide-slide375 {
+        display: none;
+      }
+
+      .player__photo {
+        width: 244px;
+height: 244px;
+margin-top: 20px;
+      }
 }
 

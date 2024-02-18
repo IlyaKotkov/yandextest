@@ -1,67 +1,5 @@
 import '../styles/index.css';
 
-// const slider = document.getElementById("slider");
-// const slides = document.querySelectorAll(".player__container");
-// const prevBtn = document.getElementById("prevBtn");
-// const nextBtn = document.getElementById("nextBtn");
-
-// // устанавливаем начальные значения
-// let currentslide = 0;
-// const slidestoshow = 3;
-// const slidescount = slides.length;
-
-// const showslides = () => {
-//     // скрываем все слайды
-//     slides.forEach((slide) => {
-//       slide.style.display = "none";
-//     });
-    
-//     // отображаем нужное количество слайдов
-//     for (let i = currentslide; i < currentslide + slidestoshow; i++) {
-//       if (slides[i]) {
-//         slides[i].style.display = "";
-//       }
-//     }
-    
-//     // блокируем или разблокируем кнопку prevbtn
-//     if (currentslide === 0) {
-//       prevBtn.disabled = true;
-//     } else {
-//       prevBtn.disabled = false;
-//     }
-    
-//     // блокируем или разблокируем кнопку nextbtn
-//     if (currentslide + slidestoshow >= slidescount) {
-//       nextBtn.disabled = true;
-//     } else {
-//       nextBtn.disabled = false;
-//     }
-//   };
-
-// // инициализация слайдера
-
-// showslides();
-
-// // обработчик для кнопки "previous"
-// prevBtn.addEventListener("click", () => {
-//     currentslide -= slidestoshow;
-//     if (currentslide < 0) {
-//       currentslide = 0;
-//     }
-//     showslides();
-//     document.querySelector(".players__count").textContent = "3";
-//   });
-
-// // обработчик для кнопки "next"
-// nextBtn.addEventListener("click", () => {
-//     currentslide += slidestoshow;
-//     if (currentslide >= slidescount) {
-//       currentslide = slidescount - slidestoshow;
-//     }
-//     showslides();
-//     document.querySelector(".players__count").textContent = "6";
-//   });
-
 document.addEventListener("DOMContentLoaded", function() {
   const slider = document.getElementById("slider"); // получаем элемент слайдера
   const prevbtn = document.getElementById("prevBtn"); // получаем кнопку "назад"
@@ -95,7 +33,82 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // обработчики событий для кнопок "вперед" и "назад"
   nextbtn.addEventListener("click", nextslide);
   prevbtn.addEventListener("click", prevslide);
+});
+
+const stagescontainer = document.querySelector('.stages__container375');
+const stageelements = document.querySelectorAll('.stage375');
+const prevbutton = document.getElementById("prevBtn375");
+const nextbutton = document.getElementById("nextBtn375");
+const dots = document.querySelectorAll('.dot');
+
+let currentindex = 0;
+stageelements.forEach((stage, index) => {
+  if (index !== currentindex) {
+    stage.classList.add('hide__stages');
+  }
+});
+
+nextbutton.addEventListener('click', () => {
+  if (currentindex === stageelements.length - 1) {
+    return;
+  }
+
+  stageelements[currentindex].classList.add('hide__stages');
+  dots[currentindex].classList.add('dot__gray');
+  currentindex++;
+  stageelements[currentindex].classList.remove('hide__stages');
+  dots[currentindex].classList.remove('dot__gray');
+});
+
+prevbutton.addEventListener('click', () => {
+  if (currentindex === 0) {
+    return;
+  }
+
+  stageelements[currentindex].classList.add('hide__stages');
+  dots[currentindex].classList.add('dot__gray');
+  currentindex--;
+  stageelements[currentindex].classList.remove('hide__stages');
+  dots[currentindex].classList.remove('dot__gray');
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const slider = document.getElementById("slider375"); // получаем элемент слайдера
+  const prevBtn = document.getElementById("prevBtn375P"); // получаем кнопку "назад"
+  const nextBtn = document.getElementById("nextBtn375P"); // получаем кнопку "вперед"
+  const playerCount = document.getElementsByClassName("players__count375")[0]; // получаем элемент счетчика участников
+
+  let currentIndex = 0; // индекс текущей позиции слайдера
+
+  // функция для обновления счетчика участников
+  function updatePlayerCount() {
+    playerCount.innerText = currentIndex + 1;
+  }
+
+  // функция для переключения слайдов вперед
+  function nextSlide() {
+    if (currentIndex < slider.children.length - 1) {
+      slider.children[currentIndex].classList.add("hide-slide375");
+      currentIndex++;
+      slider.children[currentIndex].classList.remove("hide-slide375");
+      updatePlayerCount();
+    }
+  }
+
+  // функция для переключения слайдов назад
+  function prevSlide() {
+    if (currentIndex > 0) {
+      slider.children[currentIndex].classList.add("hide-slide375");
+      currentIndex--;
+      slider.children[currentIndex].classList.remove("hide-slide375");
+      updatePlayerCount();
+    }
+  }
+
+  nextBtn.addEventListener("click", nextSlide);
+  prevBtn.addEventListener("click", prevSlide);
 });
